@@ -1,0 +1,1133 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,700,400,500");
+
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/64df22558bd173e193424f31.64df22568bd173e193424f34.VQ6di3I.hch.png");
+
+@font-face {
+  font-family: "Planet Comic";
+  src: url("../assets/Planet_Comic.otf") format("woff"),
+    url("../assets/Planet_Comic.ttf") format("truetype");
+}
+
+
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --black: #000000;
+  --black-rock: #14002e;
+  --white: #ffffff;
+ 
+  --font-size-l: 32px;
+  --font-size-m: 22px;
+  --font-size-s: 18px;
+  --font-size-xl: 64px;
+ 
+  --font-family-planet_comic-regular: "Planet Comic";
+  --font-family-ubuntu: "Ubuntu", Helvetica;
+}
+.ubuntu-normal-black-rock-22px {
+  color: var(--black-rock);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.ubuntu-bold-black-rock-22px {
+  color: var(--black-rock);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.ubuntu-bold-black-rock-32px {
+  color: var(--black-rock);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+}
+
+
+/* screen - push-github */
+
+.push-github {
+  background-color: #eeeeee;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 42px;
+}
+
+.div-header-section {
+  width: 1420px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wuffi-token {
+  background-color: transparent;
+  background-image: url('../assets/logo.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 640px;
+  z-index: 99;
+}
+
+.strong-bark-your-calendars-for-2024-OlwM73 {
+  color: var(--white);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-s);
+  line-height: 22px;
+  text-align: left;
+}
+
+.span0-fxe3vS {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.span1-fxe3vS {
+  font-style: normal;
+  font-weight: 300;
+}
+
+.get-ready-for-a-gami-OlwM73 {
+  background-color: transparent;
+  color: #00e1b7;
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.next-gen-meme-coin-OlwM73 {
+  background-color: transparent;
+  color: #00e1b7;
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.logo-wuffi-wordmark {
+  background-color: transparent;
+  height: 97px;
+  width: 461px;
+}
+
+.container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-center-content .strong-bark-your-calendars-for-2024-nSXazb {
+  align-self: stretch;
+  color: var(--black-rock);
+  font-family: "Planet Comic";
+  font-size: var(--font-size-xl);
+  line-height: 76.8px;
+  text-align: center;
+}
+
+.push-github .frame-1-nSXazb {
+  gap: 16px;
+}
+
+.push-github .token-contract-ULxu5w {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 38.4px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .span1-NSomfx {
+  color: var(--black-rock);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.container-center-content .span1-tSIsx5 {
+  color: var(--black-rock);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.container-center-content .frame-133848-nSXazb {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.container-center-content .the-wuf-token-BE87dB {
+  background-color: transparent;
+  line-height: 38.4px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .wuffi-thrives-on-the-BE87dB {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-1-75LJKM {
+  gap: 24px;
+}
+
+.container-center-content .howl-to-the-moon-3xVPRm {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 38.4px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .wuffi-is-on-a-tail-w-3xVPRm {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133848-3eFixV {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px 0px 0px 32px;
+  position: relative;
+  width: 100%;
+}
+
+.container-center-content .chain-chomper-rmoKVz {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .sniffing-out-opportu-rmoKVz {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133849-3eFixV {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container-center-content .paw-sitive-community-xOU32s {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .every-member-of-the-xOU32s {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133850-3eFixV {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container-center-content .airdrop-alphas-nQwzUK {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .sniffing-out-active-nQwzUK {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133851-3eFixV {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container-center-content .alpha-gamer-yuRzXm {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .leading-the-pack-in-yuRzXm {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133852-3eFixV {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container-center-content .web3-wag-5vNkIp {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .wagging-tails-in-the-5vNkIp {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133853-3eFixV {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container-center-content .bark-fi-innovator-oZQVTH {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .wuffi-adds-a-playful-oZQVTH {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-2-nSXazb {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.container-center-content .lions-share-to-the-wuf-pack-8hn9iu {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 38.4px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .max-supply100-t-wuf-8hn9iu {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133848-cmPqP3 {
+  align-items: center;
+  align-self: stretch;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 0px 0px 0px 32px;
+  position: relative;
+  width: 100%;
+}
+
+.container-center-content .developer-integrations-jAJuR5 {
+  background-color: transparent;
+  flex: 1;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  margin-top: -1.00px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133849-cmPqP3 {
+  align-items: center;
+}
+
+.container-center-content .dex-traders-ekxmPp {
+  background-color: transparent;
+  flex: 1;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  margin-top: -1.00px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133850-cmPqP3 {
+  align-items: center;
+}
+
+.container-center-content .x20-x0eYo9 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .early-contributors-x0eYo9 {
+  background-color: transparent;
+  flex: 1;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  margin-top: -1.00px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133851-cmPqP3 {
+  align-items: center;
+}
+
+.container-center-content .x30-G1SWrD {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .community-airdrops-G1SWrD {
+  background-color: transparent;
+  flex: 1;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  margin-top: -1.00px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133852-cmPqP3 {
+  align-items: center;
+}
+
+.container-center-content .x25-hYNRRo {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .market-development-hYNRRo {
+  background-color: transparent;
+  flex: 1;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  margin-top: -1.00px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-133853-cmPqP3 {
+  align-items: center;
+}
+
+.container-center-content .x5-3zMDTb {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .initial-liquidity-3zMDTb {
+  background-color: transparent;
+  flex: 1;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  margin-top: -1.00px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .the-wuf-pack-8jyDwT {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 38.4px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.container-center-content .every-bark-resonates-8jyDwT {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .paw-sitive-players-a-8jyDwT {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .alpha-motivators-lea-8jyDwT {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .code-hounds-sniffing-8jyDwT {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .creative-canines-add-8jyDwT {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .frame-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+}
+
+.container-center-content .frame-133847 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container-center-content .frame-133848 {
+  background-color: transparent;
+  display: flex;
+}
+
+.container-center-content .frame-133849 {
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 0px 0px 0px 32px;
+  position: relative;
+}
+
+.container-center-content .frame-133850 {
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 0px 0px 0px 32px;
+  position: relative;
+}
+
+.container-center-content .frame-133851 {
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 0px 0px 0px 32px;
+  position: relative;
+}
+
+.container-center-content .frame-133852 {
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 0px 0px 0px 32px;
+  position: relative;
+  width: 100%;
+}
+
+.container-center-content .frame-133853 {
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 0px 0px 0px 32px;
+  position: relative;
+  width: 100%;
+}
+
+.container-center-content .strong-bark-your-calendars-for-2024 {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.00px;
+}
+
+.container-center-content .wuffi-token-contract {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 30px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+}
+
+.container-center-content .x10 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 26.4px;
+  position: relative;
+  text-align: center;
+}
+
+.header-screen {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.header-screen-bg {
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/64df22578bd173e193424f36/releases/661363fed3ad572583626494/img/div-lp-pom-block-11.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 640px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.text-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.div-header-section-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 37px;
+  z-index: 99;
+}
+
+.container-center-content {
+  padding: 64px;
+  width: 1328px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+}
+
+@media screen and (max-width: 1280px) {
+
+  .header-screen-bg {
+    height: 868px;
+  }
+
+  /* Styles for phones */
+  .header-screen {
+   width: 100%;
+ }
+
+ .div-header-section-text {
+   width: 100%;
+   text-align: center;
+ }
+
+ .text-logo {
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .logo-wuffi-wordmark {
+   width: 320px;
+ }
+ 
+ .text-description {
+   width: 80%;
+ }
+
+ .div-header-section {
+   width: 100%;
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .wuffi-token {
+   width: 100%;
+   height: 50vw;
+ }
+
+ .container-center-content {
+   width: 100%;
+   padding: 32px;
+ }
+
+ .strong-bark-your-calendars-for-2024-OlwM73 {
+   text-align: center;
+ }
+
+ .text-link {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .tag-link {
+   display: flex;
+   white-space: pre-wrap;
+   white-space: pre-line;
+   word-wrap: break-word;
+   word-break: break-all;
+ }
+ /* Styles for tablets */
+}
+
+@media screen and (max-width: 768px) {
+  .header-screen-bg {
+    height: 768px;
+  }
+
+   /* Styles for phones */
+   .header-screen {
+    width: 100%;
+  }
+
+  .div-header-section-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-logo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-wuffi-wordmark {
+    width: 320px;
+  }
+  
+  .text-description {
+    width: 80%;
+  }
+
+  .div-header-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wuffi-token {
+    width: 100%;
+    height: 70vw;
+  }
+
+  .container-center-content {
+    width: 100%;
+    padding: 32px;
+  }
+
+  .strong-bark-your-calendars-for-2024-OlwM73 {
+    text-align: center;
+  }
+
+  .text-link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tag-link {
+    display: flex;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  /* Styles for tablets */
+}
+
+@media screen and (max-width: 576px) {
+  .header-screen-bg {
+    height: 640px;
+  }
+
+  /* Styles for phones */
+  .header-screen {
+    width: 100%;
+  }
+
+  .div-header-section-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-logo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-wuffi-wordmark {
+    width: 320px;
+  }
+  
+  .text-description {
+    width: 80%;
+  }
+
+  .div-header-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .wuffi-token {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .container-center-content {
+    width: 100%;
+    padding: 32px;
+  }
+
+  .strong-bark-your-calendars-for-2024-OlwM73 {
+    text-align: center;
+  }
+
+  .text-link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tag-link {
+    display: flex;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+}
